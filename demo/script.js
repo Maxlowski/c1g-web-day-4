@@ -11,8 +11,9 @@ const countButton = document.getElementById("countButton");
 const doneCounter = document.getElementById("doneCounter");
 const undoneCounter = document.getElementById("undoneCounter");
 
+
 getButton.addEventListener( 'click', () => {
-    fetch('https://jsonplaceholder.typicode.com/todos/2')
+    fetch('https://jsonplaceholder.typicode.com/todos')
         .then(response => {
             if(!response.ok) {
                 throw new Error(`HTTP-Fehler: ${response.status}`)
